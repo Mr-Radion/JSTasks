@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//    function funct(num1) {
+//        return function(num2) {
+//            return function(num3) {
+//                return num1 + num2 + num3;
+//            }
+//        }
+//    }
+//      
+//    alert(funct(2)(3)(4));    
+      
+    function funct(num1, arr = []) {
+      return function(num2) {
+        return function(num3) {
+          return function(num4) {
+            return function(){
+              arr.push(num1, num2, num3, num4);
+              return arr;    
+            }
+          }
+        }
+      }
+    }
+      
+    console.log(funct(2)(3)(4)(5)());
+  </script>  
+</body>
+</html>

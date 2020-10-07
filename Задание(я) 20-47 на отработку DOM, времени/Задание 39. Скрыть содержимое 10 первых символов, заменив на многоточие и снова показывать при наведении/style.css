@@ -1,0 +1,26 @@
+.content {
+  width: 90px;
+  height: 1em;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+/* // Реализация через css без js и класса .overflowNone
+.content:hover {
+  cursor: pointer;
+  width: 300px;
+  height: auto;
+  white-space: normal; 
+  overflow: visible; 
+  text-overflow: clip; 
+}*/
+
+.content.overflowNone {
+  cursor: pointer;
+  width: 300px;
+  height: auto;
+  white-space: normal; 
+  overflow: visible; 
+  text-overflow: clip;   
+}

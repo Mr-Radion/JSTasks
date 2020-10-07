@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <img 
+    class="img"
+    src="https://cdn.pixabay.com/photo/2020/05/03/13/09/puppy-5124948_960_720.jpg"
+    width="500"
+    id="img"
+  >
+  <button class="buttonWidth">Увеличить</button>
+  <button class="buttonPrev">Назад</button>
+  <button class="buttonNext">Далее</button>
+  
+  <script>
+      
+  // let img = document.getElementById('img');
+  let img = document.querySelector('.img');
+  let buttonWidth = document.querySelector('.buttonWidth');
+  let buttonPrev = document.querySelector('.buttonPrev');
+  let buttonNext = document.querySelector('.buttonNext');
+
+  buttonWidth.addEventListener('click', function() {
+    img.width = 1000;
+      // img.setAttribute('width', '1000');
+  });
+
+  buttonPrev.addEventListener('click', function() {
+    img.src = 'https://cdn.pixabay.com/photo/2020/05/03/13/09/puppy-5124948_960_720.jpg';
+  });
+
+  buttonNext.addEventListener('click', function() {
+    img.src = 'https://cdn.pixabay.com/photo/2014/08/21/14/51/pet-423398_960_720.jpg';
+  });
+  
+  </script>  
+</body>
+</html>

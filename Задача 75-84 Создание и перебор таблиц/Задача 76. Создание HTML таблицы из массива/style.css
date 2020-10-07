@@ -1,0 +1,19 @@
+.table {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+/*
+  justify-items: center;
+  align-items: center;
+*/
+}
+
+/*
+.tr {
+    
+}
+*/
+
+.td {
+  outline: 1px solid #000;
+}

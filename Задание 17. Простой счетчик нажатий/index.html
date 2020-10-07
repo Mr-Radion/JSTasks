@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <button class="counter">0</button>
+  <script>
+      
+    let button = document.querySelector('.counter');
+
+    button.addEventListener('click', function1);
+
+    function function1() {
+      this.innerHTML = Number(this.innerHTML) + 1;
+      if (this.innerHTML == 10) 
+      this.removeEventListener('click', function1)   
+    };
+      
+  </script>  
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function func(...nums) {
+      let sum = 0;
+      let average = 0;
+
+      for (let num of nums) {
+        sum+=num;
+      }
+
+      average = sum/nums.length;
+
+        return average;
+    }
+
+    console.log( func(1, 4, 5, 23, 4.5) );
+  </script>  
+</body>
+</html>

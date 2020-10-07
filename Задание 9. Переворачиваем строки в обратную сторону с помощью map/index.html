@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let arr = [121, 36, 81];
+    let arr = ['Золото', 'Серебро', 'Жажда'];
+
+    let result = arr.map((element) => {
+      // return Math.sqrt(element);
+     return element.split("").reverse().join("");
+
+    });
+    console.log(result);
+ 
+    // Переворот массива без функций 
+
+    var arr = ['a', 'b', 'c', 'd', 'e'];
+    var result = [];
+
+    for (var i = arr.length - 1; i >= 0; i--) {
+	  result.push(arr[i]);
+    }
+
+    console.log(result); //выведет ['e', 'd', 'c', 'b', 'a']
+
+  </script>  
+</body>
+</html>

@@ -1,0 +1,28 @@
+a {
+  margin-left: 10px;
+}
+
+.button {
+  display: block;    
+}
+
+span {
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;    
+}
+
+.formWrapper {
+  margin-top: 20px;    
+}
+
+.formItem {
+  margin-top: 5px;    
+  margin-bottom: 20px;    
+}
+
+.button {
+  display: block;
+}

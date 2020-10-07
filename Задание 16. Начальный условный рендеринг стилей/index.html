@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <div id="elem" class="aaa bbb ccc"></div>
+  <button class="addStyleArr">Получить стили</button>
+  <script>
+    let div = document.querySelector('#elem');
+    let button = document.querySelector('.addStyleArr');
+
+    button.addEventListener('click', function() {
+      let arrStyle = [];
+      arrStyle = div.className.split(' ');
+      console.log(arrStyle);
+    });
+  </script>  
+</body>
+</html>

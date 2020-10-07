@@ -1,0 +1,61 @@
+.table {
+  width: fit-content; 
+  margin-top: 15px; 
+}
+
+.tr {
+  display: flex;
+  height: 100%;
+}
+
+.td, a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;    
+  width: 70px;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.input {
+  height: 50px;
+  width: 62px;
+  padding: 0px;
+  padding-left: 5px;
+  margin: 0px;
+  border: none;
+}
+
+.input:focus {
+  border: none;
+  height: 50px;
+  width: 67px; 
+  padding: 0px;
+  padding-left: 5px;
+  margin: 0px;
+  margin-left: -1px;
+}
+
+a {
+  text-decoration: none;    
+}
+
+a > p {
+  margin: 0; 
+  margin-top: 5px;
+  text-align: center;
+}
+
+.formWrapper {
+  margin-top: 20px;    
+}
+
+.formItem {
+  margin-top: 5px;    
+  margin-bottom: 20px;    
+}
+
+.btn-addEmployee {
+  display: block;
+}

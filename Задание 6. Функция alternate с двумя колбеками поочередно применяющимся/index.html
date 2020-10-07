@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      
+    function alternate(arr, funct1, funct2) {
+        let result = [];
+        let i = 0;
+        for (let elem of arr) {
+            i++
+            if (i % 2 == 0) { 
+              result.push(funct2(elem))
+            } else {
+              result.push(funct1(elem))
+            }
+        }
+        
+        return result;
+    }  
+      
+    let result = alternate(
+      ['a', 'b', 'c', 'd', 'e'],
+      function(elem) {
+		return elem + '!';
+	  },
+	  function(elem) {
+		return elem + '?';
+	  },
+    );
+
+    console.log(result); // выведет ['a!', 'b?', 'c!', 'd?', 'e!']
+  </script>  
+</body>
+</html>

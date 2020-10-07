@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <textarea class="text-pole">
+  </textarea>
+  <button class="btn-toggle a">
+    Показать
+  </button>
+  <script type="text/javascript" defer>
+    let text = document.querySelector('.text-pole');
+    let button = document.querySelector('.btn-toggle');
+      
+    let addToggle = () => {
+      let classNames = text.classList; 
+      classNames.toggle('active');  
+      (text.classList.contains('active')) ? button.innerHTML = 'Скрыть' : button.innerHTML = 'Показать'; 
+    };  
+      
+    button.addEventListener('click', addToggle);
+      
+//    function addToggle() {
+//      let classNames = text.classList; 
+//      classNames.toggle('active');  
+//      (text.classList.contains('active')) ? button.innerHTML = 'Скрыть' : button.innerHTML = 'Показать';
+//    }
+    
+  </script>  
+</body>
+</html>

@@ -1,0 +1,26 @@
+.container {
+  margin-top: 10px;
+}
+
+.table {
+  width: fit-content;    
+}
+
+.tr {
+  border: 1px solid #000;   
+}
+
+.tr:nth-child(n + 2) {
+  border-top: none;          
+}
+
+.td {
+  width: 55px;
+  height: 30px;   
+  border-right: 1px solid #000;  
+  display: inline-block;
+}
+
+.td:last-child {
+  border: none;          
+}

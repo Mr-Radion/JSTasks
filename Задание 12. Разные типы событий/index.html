@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" class="result" value disabled>
+  <button class="button">
+      Нажми на меня
+  </button>
+  
+  <script>
+      let button = document.querySelector('.button');      
+      let input = document.querySelector('.result');
+      
+      button.addEventListener('dblclick', () => {
+        input.setAttribute('value', 'Двойной клик');  
+      });
+            
+      button.addEventListener('mouseover', () => {
+        input.setAttribute('value', 'Ты навел на меня'); 
+      });
+                  
+      button.addEventListener('mouseout', () => {
+        input.setAttribute('value', 'Ты убрал курсор с кнопки');  
+      });
+      
+  </script>  
+</body>
+</html>

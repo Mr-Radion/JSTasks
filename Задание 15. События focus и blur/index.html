@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <input 
+    type="text"
+    placeholder
+    class="input"
+  >
+  
+    <button
+      class="remove"
+    >
+      Очистить
+    </button>
+  
+  <script>
+    
+  let input = document.querySelector('.input');
+  let button = document.querySelector('.remove');
+
+  input.addEventListener('focus', func1);
+
+  input.addEventListener('blur', func2);
+
+  button.addEventListener('click', () => {
+      input.removeAttribute('placeholder');
+  });      
+      
+  function func1() {
+    input.placeholder = 'Какой-то текст';
+  };
+      
+  function func2() {
+    input.placeholder = 'Нету текста';  
+  };
+      
+  </script>  
+</body>
+</html>

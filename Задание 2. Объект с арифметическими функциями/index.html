@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  let obj = {
+    funct1: function(arr) {  
+      let sum = 0;
+      for (index of arr) {
+        sum+=index;
+      }
+      return sum;
+    },
+    funct2: function(arr) {     
+      let sum = 0;
+      for (index of arr) {
+        sum+=index * index;
+      }
+      return sum; 
+      },
+    funct3: function(arr) { 
+      let sum = 0;
+      for (index of arr) {
+        sum+=index * index * index;
+      }
+        return sum; 
+      }
+    };
+
+    let arr = [ 2, 3, 2 ];
+    let result = obj.funct3(arr);
+
+    console.log(result);
+  </script>  
+</body>
+</html>
